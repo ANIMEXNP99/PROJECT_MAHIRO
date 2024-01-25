@@ -66,7 +66,7 @@ class MessBot(Client):
             msg = message_object.text.lower()
             rainbow_light_text_print("[ [ MESSAGE ] ] " + msg)
             prefix = str(configuration['CONFIG']['BOT_INFO']['PREFIX'])
-            prefixs = ("prefix", "PREFIX", "Mahiro", "MAHIRO", "Prefix")
+            prefixs = ("prefix", "PREFIX", "lord", "LORD", "Prefix")
             if any(msg.startswith(prefix) for prefix in prefixs):
                 reply = f"𝚃𝚢𝚙𝚎 '{prefix}𝚕𝚒𝚜𝚝' 𝚝𝚘 𝚜𝚑𝚘𝚠 𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜."
                 self.sendmessage(author_id, thread_id, thread_type, reply)
